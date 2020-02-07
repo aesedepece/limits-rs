@@ -1,0 +1,22 @@
+[package]
+name = "limits-rs"
+version = "0.1.0"
+authors = ["Adán SDPC <adan.sdpc@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+documentation = "https://docs.rs/limits-rs"
+homepage = "https://github.com/aesedepece/limits-rs"
+repository = "https://github.com/aesedepece/limits-rs"
+description = """
+Utilities for determining the limits that an operating system enforce on a given particular process.
+"""
+keywords = ["os", "kernel", "limits", "files"]
+categories = ["os", "os::unix-apis"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "aesedepece/limits-rs" }
+
+[dependencies]
+failure = "0.1.6"
+failure_derive = "0.1.6"
