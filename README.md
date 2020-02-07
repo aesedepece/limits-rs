@@ -15,6 +15,7 @@ file on GNU/Linux. On any other platform, the provided methods will return an er
 user can decide what to do in the absence of information about limits.
 
 Support for other operating systems and platforms may be added on demand.
+Feel free to [file an issue][issues] or make a PR!
 
 ## Examples
 
@@ -46,12 +47,40 @@ let max_open_files_soft_limit = limits.max_open_files.soft;
 println!("{}", max_open_files_soft_limit);
 ```
 
+## Supported "limitable" properties
+
+### GNU/Linux
+The properties currently tracked by `limits-rs::linux::Limits` are:
+
+- `max_cpu_time`
+- `max_file_size`
+- `max_data_size`
+- `max_stack_size`
+- `max_core_file_size`
+- `max_resident_set`
+- `max_processes`
+- `max_open_files`
+- `max_locked_memory`
+- `max_address_space`
+- `max_file_locks`
+- `max_pending_signals`
+- `max_msgqueue_size`
+- `max_nice_priority`
+- `max_realtime_priority`
+- `max_realtime_timeout`
+
+### Other operating systems
+
+As said before, support for other operating systems and platforms may be added on demand.
+Feel free to [file an issue][issues] or make a PR!
+
 ## License
 
 Scriptful is distributed under the terms of both the MIT license and the Apache License (Version 2.0).
 
 See [LICENSE-APACHE] and [LICENSE-MIT], and [COPYRIGHT] for details.
 
+[issues]: https://github.com/aesedepece/limits-rs/issues
 [LICENSE-APACHE]: LICENSE-APACHE
 [LICENSE-MIT]: LICENSE-MIT
 [COPYRIGHT]: COPYRIGHT
