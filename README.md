@@ -5,7 +5,7 @@
 [![Docs](https://docs.rs/limits-rs/badge.svg)](https://docs.rs/limits-rs)
 ![License](https://img.shields.io/crates/l/limits-rs.svg)
 
-**A Rust library for determining the limits that an operating system enforce on a given particular
+**A Rust library for determining the limits that an operating system enforces on a given particular
 process.**
 
 ## Operating systems support

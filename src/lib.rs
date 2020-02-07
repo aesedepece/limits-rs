@@ -1,4 +1,4 @@
-//! Utilities for determining the limits that an operating system enforce on a given particular
+//! Utilities for determining the limits that an operating system enforces on a given particular
 //! process.
 //!
 //! In its current implementation, this crate allows convenient read of the `/proc/<pid>/limits`

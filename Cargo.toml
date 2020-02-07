@@ -8,7 +8,7 @@ documentation = "https://docs.rs/limits-rs"
 homepage = "https://github.com/aesedepece/limits-rs"
 repository = "https://github.com/aesedepece/limits-rs"
 description = """
-Utilities for determining the limits that an operating system enforce on a given particular process.
+Utilities for determining the limits that an operating system enforces on a given particular process.
 """
 keywords = ["os", "kernel", "limits", "files"]
 categories = ["os", "os::unix-apis"]
