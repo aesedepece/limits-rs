@@ -158,7 +158,9 @@ mod tests {
     #[test]
     fn test_proc_file_not_found() {
         let error = format!("{:?}", super::get_pid_limits(std::u32::MAX).unwrap_err());
-        let expected_error = String::from(r#"ProcFileNotFound("/proc/4294967295/limits", Os { code: 2, kind: NotFound, message: "No such file or directory" })"#);
+        let expected_error = String::from(
+            r#"ProcFileNotFound("/proc/4294967295/limits", Os { code: 2, kind: NotFound, message: "No such file or directory" })"#,
+        );
 
         assert_eq!(error, expected_error);
     }
