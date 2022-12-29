@@ -18,5 +18,4 @@ edition = "2018"
 travis-ci = { repository = "aesedepece/limits-rs" }
 
 [dependencies]
-failure = "0.1.6"
-failure_derive = "0.1.6"
+thiserror = "1.0"
